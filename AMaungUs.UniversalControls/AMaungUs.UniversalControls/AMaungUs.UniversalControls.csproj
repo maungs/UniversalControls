@@ -122,6 +122,7 @@
   <ItemGroup>
     <Compile Include="NetworkStatus.xaml.cs">
       <DependentUpon>NetworkStatus.xaml</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\AMaungUs.UniversalControls.rd.xml" />
@@ -135,6 +136,7 @@
     <Page Include="NetworkStatus.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
